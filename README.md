@@ -10,7 +10,7 @@ gstool "github.com/kelwang/gs/tool"
 
 if c.DevMode() {
     gsOpts := &gbuild.Options{CreateMapFile: false}
-    mux.Handle("/gs-src/", gs.Handler("github.com/xxx/mygopherjs/", gsOpts, len("gs-src/")))
+    mux.Handle("/gs-src/", gstool.Handler("github.com/xxx/mygopherjs/", gsOpts, len("gs-src/")))
 }else{
     // serve compiled javascript
     mux.Handle("/js/script/script.js", aStaticHandler)
