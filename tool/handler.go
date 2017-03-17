@@ -150,7 +150,7 @@ func (f *fakeFile) Sys() interface{} {
 	return nil
 }
 
-// If browserErrors is non-nil, errors are written for presentation in browser.
+// HandleError If browserErrors is non-nil, errors are written for presentation in browser.
 func HandleError(f func() error, options *gbuild.Options, browserErrors *bytes.Buffer) int {
 	switch err := f().(type) {
 	case nil:
