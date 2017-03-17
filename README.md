@@ -1,6 +1,8 @@
 # gs
 gopherjs related tools
 
+### tool handler is a way to serve gopherjs at real time, best for developer mode  
+
 go server
 
 ```
